@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Book</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <script src="framework/angular-1.5.7.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body ng-app="bookApp">
+    <div class="wrapper">
+        <header>
+            <h1><center>My Favorite Books</center></h1>
+        </header>
+
+        <div class="main">
+            <div ng-view></div>
+        </div>
+    </div>
+
+<!-- Modules -->
+<script src="app/app.js"></script>
+
+<!-- Controllers -->
+<script src="app/controllers/bookshelfController.js"></script>
+<script src="app/controllers/bookController.js"></script>
+<script src="app/controllers/chapterController.js"></script>
+
+<!-- Services -->
+<script src="app/services/book.js"></script>
+
+</body>
+</html>
